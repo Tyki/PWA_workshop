@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "link": "http://google.fr" 
+    },
+    {
+      "id": "2",
+      "link": "http://yahoo.com"
+    }
+  ]
+}
