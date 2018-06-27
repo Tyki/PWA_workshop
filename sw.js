@@ -16,7 +16,9 @@ self.addEventListener('install', function(event) {
         './index.html',
         './js/main.js',
         './css/style.css',
-        './images/dog_attack.jpg'
+        './images/dog_attack.jpg',
+        './images/party_hard.gif',
+        './offline.html'
       ])
       .catch(error => {
         console.error(error)
@@ -84,7 +86,16 @@ self.addEventListener('fetch', function(event) {
     })
   )*/
 
-
+  // Gestion du offline?
+  /*event.respondWith(
+    fetch(event.request)
+    .catch(function() {
+      if (event.request.url.indexOf('index.html') !== -1) {
+        return caches.match('./offline.html')
+      }
+      return caches.match(event.request);
+    })
+  );*/
 
 
 
